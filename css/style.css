@@ -17,6 +17,8 @@ body {
 	height: 80px;
 	display: block;
 	background-color: #f9f9f9;
+	position: fixed;
+	z-index: 1;
 }
 
 .dot {
