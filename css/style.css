@@ -2,12 +2,14 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	text-decoration: none;
 	font-family: Comic Sans MS;
 }
 
 body {
 	background-color: #f0f0f0;
+	width: 100%;
+	word-wrap: break-word;
+	word-break: break-all;
 }
 
 .header {
