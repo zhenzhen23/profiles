@@ -91,9 +91,16 @@ body {
 	margin-top: 70px;
 }
 
+.my-img {
+	height: 50%;
+  	width: 50%;
+}
 
-
-
+.home-page {
+	width: 50%;
+	margin: auto;
+	margin-top: 10%;
+}
 
 
 
