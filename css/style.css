@@ -150,13 +150,13 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
-    body {
+    .content-home {
         transform: scale(0.8);
     }
 }
 
 @media screen and (max-width: 720px) {
-    body {
+    .content-home {
         transform: scale(0.5);
     }
 }
