@@ -22,6 +22,7 @@ body {
 	position: fixed;
 	top: 0;
 	z-index: 1;
+	min-width: 0px;
 }
 
 .dot {
@@ -69,6 +70,7 @@ body {
 	text-align: center;
 	position: fixed;
 	bottom: 0;
+	min-width: 0px;
 }
 
 .contact {
