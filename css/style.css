@@ -93,13 +93,14 @@ body {
 	margin: auto;
 	margin-top: 10%;
 	max-width: 1920px;
-	min-width: 480px;
+	min-width: 350px;
 }
 
 .my-img {
 	height: 100%;
   	width: 100%;
   	object-fit: contain;
+  	min-width: 400px !important;
 }
 
 .content-half {
@@ -148,22 +149,6 @@ body {
   color: #fff;
   background-color: #1A1A1A;
 }
-
-@media screen and (max-width: 1280px) {
-    .content-home {
-        transform: scale(0.8);
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .content-home {
-        transform: scale(0.5);
-    }
-}
-
-
-
-
 
 
 
