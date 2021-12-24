@@ -141,6 +141,7 @@ body {
 	cursor: pointer;
 	font-size: 30px;
 	font-weight: bold;
+	color: black;
 	padding: 10px;
 	border-radius: 20px;
 	width: 60%;
@@ -175,6 +176,7 @@ body {
 	cursor: pointer;
 	font-size: 24px;
 	font-weight: bold;
+	color: black;
 	padding: 10px;
 	padding-left: 30px;
 	padding-right: 30px;
