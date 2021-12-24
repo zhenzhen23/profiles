@@ -4,7 +4,6 @@
     }
 }
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -156,6 +155,82 @@ body {
   color: #fff;
   background-color: #1A1A1A;
 }
+
+
+/*      for resume        */
+
+.wrapper {
+	margin-top: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+}
+
+.wrapper div {
+	background: lightblue;
+	padding: 1rem;
+}
+
+.wrapper div div {
+	background: lightcoral;
+	padding: 1rem;
+}
+
+.btn-download {
+	border: 2px solid #1A1A1A;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 20px;
+}
+
+.btn-download:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
