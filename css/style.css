@@ -1,3 +1,9 @@
+@media screen and (max-width: 780px) {
+	.navs {
+		display: none;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -48,7 +54,7 @@ body {
 	float: left;
 }
 
-.navs {
+#navs {
 	float: right;
 	margin: 20px;
 	margin-right: 50px;
@@ -56,7 +62,44 @@ body {
 
 .nav {
 	margin: 15px;
+	color: black;
+	transition: color 0.3s ease;
 }
+
+#navs a:hover
+{
+  color: tomato;
+}
+
+#navs-mobile {
+	position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
 	width: 100%;
@@ -220,7 +263,7 @@ body {
 	margin-bottom: 3%;
 }
 
-li {
+.wrapper li {
   list-style-type: disc;
   text-indent:-1.5em;
   margin-left:1.5em;
