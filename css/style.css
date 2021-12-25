@@ -1,5 +1,11 @@
 @media screen and (max-width: 780px) {
-	.navs {
+	#navs {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 781px) {
+	#navs-mobile {
 		display: none;
 	}
 }
@@ -16,6 +22,8 @@
 body {
 	background-color: #f0f0f0;
 }
+
+/*================header===================================*/
 
 .header {
 	width: 100%;
@@ -72,34 +80,110 @@ body {
 }
 
 #navs-mobile {
-	position: fixed;
+	float: right;
+	margin-right: 50px;
+	margin-top: 0px;
 }
 
+#nav-toggle
+{
+  display: block;
+  position: relative;
+  top: 23px;
+  left: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
 
+#nav-toggle a
+{
+  color: black;
+}
 
+#nav-toggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
 
+#nav-toggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
 
+#nav-toggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
 
+#nav-toggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
 
+#nav-toggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
 
+#nav-toggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
 
+#nav-toggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
 
+#nav-mobile
+{
+  position: absolute;
+  left: -11px;
+  width: 80px;
+  margin: 20px 0 0 -50px;
+  padding: 20px;
+  padding-top: 10px;
+  border: rgb(170, 168, 168) solid 2px;
+  background: #ededed;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
 
+#nav-mobile li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#nav-toggle input:checked ~ ul
+{
+  transform: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*================footer===================================*/
 
 .footer {
 	width: 100%;
@@ -132,6 +216,8 @@ body {
 .header-footer-margin {
 	height: 100px;
 }
+
+/*================home page===================================*/
 
 .content-home {
 	display: flex;
@@ -197,7 +283,7 @@ body {
 }
 
 
-/*      for resume        */
+/*================resume page===================================*/
 
 .wrapper {
 	display: grid;
@@ -263,10 +349,12 @@ body {
 	margin-bottom: 3%;
 }
 
+.wrapper ul {
+	margin-left: 1.2em;
+}
+
 .wrapper li {
   list-style-type: disc;
-  text-indent:-1.5em;
-  margin-left:1.5em;
 }
 
 .line-left{
