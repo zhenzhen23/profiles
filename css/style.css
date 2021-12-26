@@ -392,7 +392,7 @@ body {
 	height: 400px;
 	margin-top: -30px;
 	background-image: url(/image/project-banner.jpg);
-	background-size: 100%;
+	background-size: 110% 100%;
 	
 }
 
@@ -414,14 +414,16 @@ body {
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 30px;
 	align-items: center;
-	width: 50%;
+	width: 60%;
 	justify-self: center;
 }
 
 .project-show-right {
 	justify-self: start;
-	max-width: 50%;
+	align-self: start;
+	margin-top: 20px;
 }
+
 .project-show-left {
 	justify-self: end;
 }
@@ -430,16 +432,36 @@ body {
 	height: 283px;
 	width: 378px;
 	transition: 0.5s ease;
+	object-fit: cover;
+}
+
+.img-1 {
+	object-position: left;
+}
+
+.img-3 {
+	object-position: 0 -70px;
 }
 
 .project-more {
 	opacity: 0;
   	font-size: 50px;
 	font-style: italic;
-  	position: absolute;
-  	top: 68%;
-  	left: 32%;
+  	position: relative;
+	top: -200px;
   	transition: 0.3s ease;
+}
+
+.more-1 {
+	color: #238080;
+}
+
+.more-2 {
+	color: #f0f0f0;
+}
+
+.more-3 {
+	color: #232323;
 }
 
 .project-show:hover .project-img{
@@ -480,6 +502,41 @@ body {
 	width: 50%;
 }
 
+/*================bombergirl page===================================*/
+
+.wrapper-project-in {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 30px;
+	min-width: 950px;
+	width: 50%;
+	justify-items: center;
+	margin: auto;
+	font-size: 22px;
+}
+
+.project-name-in {
+	font-size: 56px;
+}
+
+.wrapper-project-in div{
+	border: red solid 2px;
+}
+
+.wrapper-project-in img {
+	height: 460px;
+	width: 600px;
+	object-fit:contain;
+	border: #238080 solid 2px;
+}
+
+.bombergirl-img {
+	height: 300px !important;
+}
+
+.stream-img {
+	width: 220px !important;
+}
 
 
 
