@@ -502,7 +502,7 @@ body {
 	width: 50%;
 }
 
-/*================bombergirl page===================================*/
+/*================project in page===================================*/
 
 .wrapper-project-in {
 	display: grid;
@@ -523,7 +523,6 @@ body {
 	height: 460px;
 	width: 600px;
 	object-fit:contain;
-	border: #238080 solid 2px;
 }
 
 .bombergirl-img {
@@ -534,6 +533,8 @@ body {
 	width: 220px !important;
 }
 
+
+/*================contact page===================================*/
 
 
 
