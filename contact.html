@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shrotcut icon" type="image/png" href="image/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<title>Contact | Weijie</title>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="header-footer-margin"></div>
+
+	<div class="wrapper-contact">
+		<div>
+			<p>Contact</p>
+			<p>Looking forward to hearing from you</p>
+			<p>Phone:</p>
+			<p>647-771-6880</p>
+			<p>Email:</p>
+			<p>weijiezheng23@gmail.com</p>
+		</div>
+		<div>
+			<form name="message" method="post" id="contact-form">
+				<section class="contact-message">
+					<div class="input-box">
+						<label for="fname">First Name:</label>
+						<input type="text" maxlength="20" id="fname">
+					</div>
+					<div class="input-box">
+						<label for="lname">Last Name:</label>
+						<input type="text" maxlength="20" id="lname">
+					</div>
+					<div class="input-box">
+						<label for="email" id="label-email">Email: *</label>
+						<input type="text" maxlength="30" id="email" onmouseout="hout()">
+					</div>
+					<div class="input-box">
+						<label for="subject" id="label-subject">Subject: *</label>
+						<input type="text" maxlength="20" id="subject" onmouseout="hout()">
+					</div>
+					<div class="input-box">
+						<label for="message" id="label-message">Message: *</label>
+						<textarea maxlength="300" id="message" onmouseout="hout()"></textarea>
+					</div>
+					<div class="input-box">
+						<input type="button" value="Submit" class="contact-btn" onclick="sentMsg()">
+					</div>
+				</section>
+			</form>
+		</div>
+	</div>
+
+	<div class="header-footer-margin"></div>
+	<div id="footer"></div>
+</body>
+</html>
