@@ -444,6 +444,14 @@ body {
 	object-position: 0 -70px;
 }
 
+.img-4 {
+	object-position: 0 0px;
+}
+
+.img-5 {
+	object-position: 0 -450px;
+}
+
 .project-more {
 	opacity: 0;
   	font-size: 50px;
@@ -463,6 +471,9 @@ body {
 
 .more-3 {
 	color: #232323;
+}
+.more-4 {
+	color: #6b20b1;
 }
 
 .project-show:hover .project-img{
