@@ -288,8 +288,12 @@ body {
 
 .wrapper-resume {
 	display: grid;
-	grid-template-columns: 0.5fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	min-width: 900px;
+}
+
+.skill-left{
+	margin-left: 150px;
 }
 
 .wrapper-tri {
