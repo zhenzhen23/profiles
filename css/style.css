@@ -453,7 +453,7 @@ body {
 }
 
 .img-5 {
-	object-position: 0 -450px;
+	object-fit:contain;
 }
 
 .project-more {
@@ -548,6 +548,10 @@ body {
 
 .stream-img {
 	width: 220px !important;
+}
+
+.dream-img {
+	width: 1000px !important;
 }
 
 /*================contact page===================================*/
